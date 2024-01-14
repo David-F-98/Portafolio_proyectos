@@ -108,12 +108,14 @@
 	}
 
 	&__contenedor-foto {
+		background: #ffffff;
 		position: relative;
 	}
 
 	&__foto {
 		vertical-align: top;
 		width: 100%;
+		border-radius: 120px 0 0 0;
 	}
 
 	&__burbuja {
