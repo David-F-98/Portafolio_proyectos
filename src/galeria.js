@@ -65,4 +65,17 @@ trabajos.addEventListener('click',(e)=>{
         ventanaTrabajos.querySelector('.ventana__imagen').src = trabajoClickeado.querySelector('img').src;
         ventanaTrabajos.classList.add('ventana--active');
     };
-})
+});
+
+
+ventanaTrabajos.querySelector('button[data-action="cerrar-ventana"]').addEventListener('click',(e)=>{
+    e.preventDefault();
+    ventanaTrabajos.classList.remove('ventana--active');
+});
+
+ventanaTrabajos.querySelector('.ventana__overlay').addEventListener('click',(e)=>{
+    e.preventDefault();
+    if(e.target.matches('.ventana__overlay')){
+        ventanaTrabajos.classList.remove('ventana--active');
+    };
+});
