@@ -1,5 +1,6 @@
 import './animacionGaleria';
 import './galeria';
+import './slider';
 import animarTexto from "./animarTexto";
 
 
