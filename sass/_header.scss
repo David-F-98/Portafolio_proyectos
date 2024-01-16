@@ -39,6 +39,9 @@ $breakpoints:(
 	&__menu {
 		display: flex;
 		gap: 3.125rem;
+		@include media-up(sm){
+			gap: 2.125rem;
+		}
 	}
 
 	&__link {

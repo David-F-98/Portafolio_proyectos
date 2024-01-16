@@ -30,6 +30,9 @@ $breakpoints:(
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		@include media-up(sm){
+			height: 110%;
+		}
 	}
 
 	&__correo {
@@ -37,13 +40,16 @@ $breakpoints:(
 		max-width: 600px;
 		padding: 2.5rem;
 		background: #fff;
-		border-radius: .625rem;
+		border-radius: 0.625rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		gap: 1.25rem;
 		text-align: center;
 		position: relative;
+		@include media-up(sm){
+			width: 75%;
+		}
 	}
 
 	&__btn-cerrar {
