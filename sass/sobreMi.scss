@@ -1,21 +1,35 @@
 @use 'variables';
 
+$breakpoints:(
+	sm : 800px,
+);
+
+@mixin media-up($breakpoint){
+	@media screen and (max-width: map-get($breakpoints,$breakpoint)) {
+		@content;
+	}
+};
+
 .sobreMi {
 	background: #bdbdbd;
 
 	width: 90%;
 	max-width: 1000px;
 	margin: auto;
-	padding: 40px 65px;
+	padding: 2.5rem 4.0625rem;
+
+	@include media-up(sm){
+		padding: 1.8rem 1.0625rem 1rem;
+	}
 
 	&__header {
 		text-align: center;
 		color: #fff;
-		margin-bottom: 40px;
+		margin-bottom: 2.5rem;
 	}
 
 	&__titulo {
-		margin-bottom: 10px;
+		margin-bottom: .625rem;
 	}
 
 	&__trabajo {

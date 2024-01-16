@@ -1,25 +1,44 @@
 @use 'variables';
 
+$breakpoints:(
+	sm : 800px,
+);
+
+@mixin media-up($breakpoint){
+	@media screen and (max-width: map-get($breakpoints,$breakpoint)) {
+		@content;
+	}
+};
+
 .header {
 	width: 90%;
-	max-width: 1000px;
-	margin: 40px auto 0 auto;
+	max-width: 62.5rem;
+	margin: 2.5rem auto 0 auto;
 	background: #fff;
-	padding: 40px 65px;
+	padding: 2.5rem 4.0625rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-radius: 20px 20px 0 0;
+	border-radius: 1.25rem 1.25rem 0 0;
+
+	@include media-up(sm){
+		flex-direction: column-reverse;
+		padding: 1.5rem 1.0625rem;
+	}
 
 	&__titulo {
-		font-size: 26px;
+		font-size: 1.625rem;
 		font-weight: 700;
 		color: #000;
+
+		@include media-up(sm){
+			display: none;
+		}
 	}
 
 	&__menu {
 		display: flex;
-		gap: 50px;
+		gap: 3.125rem;
 	}
 
 	&__link {
