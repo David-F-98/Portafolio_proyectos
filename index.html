@@ -338,7 +338,7 @@
 						<h1 class="ventana__titulo"></h1>
 						<p class="ventana__parrafo">
 						</p>
-						<a href="" class="ventana__enlace" id="ventana__enlace">
+						<a href="" target="_blank" onclick="prueba()" class="ventana__enlace" id="ventana__enlace">
 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ventana__link" viewBox="0 0 16 16">
 								<path fill-rule="evenodd" d="M6.364 13.5a.5.5 0 0 0 .5.5H13.5a1.5 1.5 0 0 0 1.5-1.5v-10A1.5 1.5 0 0 0 13.5 1h-10A1.5 1.5 0 0 0 2 2.5v6.636a.5.5 0 1 0 1 0V2.5a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v10a.5.5 0 0 1-.5.5H6.864a.5.5 0 0 0-.5.5"/>
 								<path fill-rule="evenodd" d="M11 5.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793l-8.147 8.146a.5.5 0 0 0 .708.708L10 6.707V10.5a.5.5 0 0 0 1 0z"/>
@@ -348,5 +348,11 @@
 				</div>
 			</div>
 		</section>
+		<script> 
+			function prueba() {       
+				const link = document.getElementById('ventana__enlace');
+				window.open(link.href,'_blank'); 
+			}
+		</script>
 	</body>
 </html>
