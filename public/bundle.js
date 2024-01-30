@@ -81,10 +81,10 @@ trabajos.addEventListener('click',(e)=>{
         ventanaTrabajos.querySelector('.ventana__titulo').innerText = titulo;
         ventanaTrabajos.querySelector('.ventana__parrafo').innerText = texto;
         ventanaTrabajos.querySelector('.ventana__enlace').href = enlace;
-       
         ventanaTrabajos.querySelector('.ventana__imagen').src = trabajoClickeado.querySelector('img').src;
         ventanaTrabajos.classList.add('ventana--active');
     }});
+
 
 ventanaTrabajos.querySelector('button[data-action="cerrar-ventana"]').addEventListener('click',(e)=>{
     e.preventDefault();
