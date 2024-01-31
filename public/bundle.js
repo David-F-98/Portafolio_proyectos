@@ -179,3 +179,4 @@ window.addEventListener('load', async()=>{
     document.querySelectorAll('.hero__burbuja')[0].classList.add('hero__burbuja--active-1');
     document.querySelectorAll('.hero__burbuja')[1].classList.add('hero__burbuja--active-2');
 });
+//# sourceMappingURL=bundle.js.map
