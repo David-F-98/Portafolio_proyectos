@@ -8,7 +8,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"sass": "sass --watch --style=compressed sass/index.scss public/bundle.css",
-		"built": "rollup --watch --config --sourcemap"
+		"build": "rollup --watch --config --sourcemap"
 	},
 	"keywords": [],
 	"author": "",
