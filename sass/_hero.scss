@@ -2,6 +2,7 @@
 
 $breakpoints:(
 	sm : 800px,
+	xs : 500px
 );
 
 @mixin media-up($breakpoint){
@@ -27,7 +28,7 @@ $breakpoints:(
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding: 2.5rem 4.0625rem;
+		padding: 2.5rem 4.0625rem 0rem;
 		@include media-up(sm){
 			padding: 1.5rem 2.0625rem;
 		}
@@ -124,6 +125,22 @@ $breakpoints:(
 			background: #656565;
 		}
 	}
+
+	&__cv{
+		margin: 3.875rem;	
+		text-align: center;
+		@include media-up(xs){
+			margin: 2.875rem;
+		}
+		&--burbuja{
+			color: #ffffff;
+			padding: 1.75rem 1.3125rem;
+			background: #000000;
+			border-radius: 6.25rem;
+		}
+
+	}
+
 
 	&__icono {
 		width: 100%;
